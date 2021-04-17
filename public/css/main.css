@@ -10,7 +10,8 @@
     flex-direction: column;
 }
 
-#videoGrid{
+#videoGrid {
+    margin-top     : 30px;
     display        : flex;
     justify-content: center;
     height         : 100%;
@@ -44,67 +45,68 @@ video {
     height          : 100%;
     width           : 230px;
 }
+
 .mainControls {
-    bottom: 0;
-    position: fixed;
-    width: 110%;
-	padding: 3px 5px 0px 5px;
-	display: flex;
-	background-color: #1a1a1a;
-	color: #a8a8a8;
-	justify-content: space-between;
+    bottom          : 0;
+    position        : fixed;
+    width           : 110%;
+    padding         : 3px 5px 0px 5px;
+    display         : flex;
+    background-color: #1a1a1a;
+    color           : #a8a8a8;
+    justify-content : space-between;
 }
 
 .mainControlsBlock {
-	display: flex;
+    display: flex;
 }
 
 .mainControlsButton {
-	letter-spacing: 0.3px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 4px 22px;
-	min-width: 80px;
-	cursor: pointer;
-	font-size: 12px;
-	font-weight: 500;
+    letter-spacing : 0.3px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding        : 4px 22px;
+    min-width      : 80px;
+    cursor         : pointer;
+    font-size      : 12px;
+    font-weight    : 500;
 }
 
 .mainControlsButton svg {
-	font-size: 19px;
-	margin-bottom: 4px;
+    font-size    : 19px;
+    margin-bottom: 4px;
 }
 
 .mainControlsButton:hover {
-	background-color: #2e2e2e;
-	border-radius: 5px;
-	color: #d5d5d5;
+    background-color: #2e2e2e;
+    border-radius   : 5px;
+    color           : #d5d5d5;
 }
 
 .mainControlsButtonEndMeeting {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 4px 22px;
-	font-size: 12px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding        : 4px 22px;
+    font-size      : 12px;
 }
 
 .leaveMeeting {
-    margin-left:100em ;
-	font-weight: 600;
-	cursor: pointer;
-	padding: 4px 22px;
-	background-color: #b72525;
-	color: #fff;
-	border-radius: 5px;
+    margin-left     : 100em;
+    font-weight     : 600;
+    cursor          : pointer;
+    padding         : 4px 22px;
+    background-color: #b72525;
+    color           : #fff;
+    border-radius   : 5px;
 }
 
 .unmute,
 .stop {
-	color: #cc3b33;
+    color: #cc3b33;
 }
 
 .header {
@@ -180,19 +182,22 @@ video {
     }
 
     video {
-        display   : block;
-        flex      : 2;
-        object-fit: cover;
-        border    : 5px solid #fff;
-        max-width : 500px;
+        display      : block;
+        flex         : 2;
+        object-fit   : cover;
+        border       : 5px solid #fff;
+        max-width    : 330px;
+        border       : 0;
+        border-radius: 5px;
     }
 
-    .main #video-grid {
-        margin-top     : 50px;
-        display        : flex;
-        height         : 75%;
-        flex-direction : column;
-        align-items    : center;
-        justify-content: center;
+    #videoGrid {
+        position  : absolute;
+        margin-top: 10px;
+        max-height: 520px;
+    }
+
+    .mainControls {
+        height: 50px;
     }
 }
