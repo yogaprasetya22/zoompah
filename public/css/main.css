@@ -26,16 +26,18 @@ video {
     flex      : 1;
     object-fit: cover;
     border    : 5px solid #fff;
+    border-radius: 10px;
+    height: 300px;
     max-width : 500px;
 }
 
 .main {
-    height : 100%;
-    display: flex;
+    /* display: flex;
+    height : 100%; */
 }
 
 .kanan {
-    position        : fixed;
+    /* position        : fixed;
     flex            : 0.2;
     display         : flex;
     flex-direction  : column;
@@ -43,7 +45,7 @@ video {
     border-left     : 1px solid #3d3d42;
     right           : 0;
     height          : 100%;
-    width           : 230px;
+    width           : 230px; */
 }
 
 .mainControls {
@@ -95,7 +97,8 @@ video {
 }
 
 .leaveMeeting {
-    margin-left     : 100em;
+    margin-left: 70em;
+    align-items: flex-end;
     font-weight     : 600;
     cursor          : pointer;
     padding         : 4px 22px;
@@ -148,8 +151,6 @@ video {
 }
 
 
-
-
 @media (max-width:800px) {
     .kanan {
         display: none;
@@ -182,12 +183,14 @@ video {
     }
 
     video {
-        margin-top: 10px;
+        margin-top   : 10px;
+        margin-right   : 10px;
         display      : block;
         flex         : 2;
         object-fit   : cover;
         border       : 5px solid #fff;
         max-width    : 320px;
+        height       : 300px;
         border       : 0;
         border-radius: 5px;
     }
@@ -200,5 +203,11 @@ video {
 
     .mainControls {
         height: 50px;
+    }
+}
+@media (max-width:750px) {
+    #videoGrid {
+        display: flex;
+        flex-direction: column;
     }
 }
